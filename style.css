@@ -21,12 +21,11 @@ background-image: cross-fade();
 
 .login_div
 {
-	background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
-}
+	background:white;
 
-.logo
-{
-	position: fixed;
+
+
+	position: center;
 }
 #login_button
 {
