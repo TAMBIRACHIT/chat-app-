@@ -6,8 +6,7 @@ html, body
 
 body
 {
-background-color: black;
-background-image: cross-fade();
+background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73aa, #006494);
 }
 
 .header
@@ -21,12 +20,14 @@ background-image: cross-fade();
 
 .login_div
 {
-	background:white;
-
-
-
-	position: center;
+	background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
 }
+
+.logo
+{
+	width: 80px;margin-top: 30px;border-radius: 40px;
+}
+
 #login_button
 {
 	width: 80%;border-radius: 15px;

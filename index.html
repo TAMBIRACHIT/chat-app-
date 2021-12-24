@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Chat app</title>
-    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chat App</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="chat.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="chat.js"></script>
 </head>
-
 <body>
-    <center>
-        <h1 class="header">
-            Chat app <sup>
-                <img src="icon.men.jpeg">
-                <img src="login page.jpg" id="logo">
-            </sup>
-        </h1>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
-            
-            <h3>Just talk to your friends everywhere</h3>
-            <h4>Join Chat app today</h4>
-            <div class="form-group">
-                <label>User Name:</label>
-                <input type="text" id="user_name" placeholder="username" class="form_control">
 
-            </div>
-            <button id="login_button" class="btn btn-primary" onclick="addUser()">Log in</button>
-            <br><br>
-        </div>
-    </center>
+<center>
+	<h1 class="header">	
+		Chat app	<sup>
+	<img src="icon.men.jpeg">
+	</sup>
+</h1>
+
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+
+	<img src="icon.men.jpeg" class="logo">
+		<h3 >Just talk to anywhere in the world</h3>
+
+		<h4 >join chat app today</h4>
+		
+		<div class="form-group">
+		  <label >User Name:</label>
+		 <input type="text" id="user_name" class="form-control" placeholder="User Name">
+		</div>
+
+		<button id="login_button" class="btn btn-primary" onclick="addUser()">Log in</button>
+		<br><br>
+	</div>
+</center>
+
 </body>
-
 </html>
